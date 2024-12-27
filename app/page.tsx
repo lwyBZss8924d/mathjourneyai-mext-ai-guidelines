@@ -44,7 +44,7 @@ export default function AIGuidelines() {
               <div className="flex items-center gap-4">
                 <div className="flex-shrink-0">
                   <Image
-                    src="/images/mext-logo.png"
+                    src="/images/mathJourneyLogo.png"
                     alt="MathJourneyAI Logo"
                     width={40}
                     height={40}
@@ -102,7 +102,8 @@ export default function AIGuidelines() {
                             src="/images/pdf-cover.jpeg"
                             alt="PDF封面预览"
                             className="absolute inset-0 w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                            fill
+                            width={400}
+                            height={600}
                           />
                           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
                         </div>
@@ -162,7 +163,8 @@ export default function AIGuidelines() {
                               src="/images/mext-logo.png"
                               alt="文部科学省"
                               className="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                              fill
+                              width={400}
+                              height={400}
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-br from-blue-100/10 to-blue-200/10 mix-blend-multiply group-hover:from-blue-100/5 group-hover:to-blue-200/5 transition-colors duration-300" />
@@ -256,7 +258,8 @@ export default function AIGuidelines() {
                 src="/images/examples-used-educational-settings.png"
                 alt="学习场景中的生成式AI应用案例"
                 className="w-full h-auto object-contain"
-                fill
+                width={800}
+                height={600}
               />
             </div>
           </div>
@@ -270,7 +273,7 @@ export default function AIGuidelines() {
               <div className="space-y-4">
                 <h3 className="text-lg md:text-xl font-bold">学校地点的人本利用</h3>
                 <ul className="list-disc pl-4 space-y-2 text-base md:text-lg">
-                  <li>生成式AI的使用应基于"以人为本"的原则，通过适当运用，辅助教职员减轻繁琐工作、激发学生的探究思维</li>
+                  <li>生成式AI的使用应基于"以人为本"的原则，通过适当运用��辅助教职员减轻繁琐工作、激发学生的探究思维</li>
                   <li>需要权衡��生的学习目标与生成式AI的能边界，保证技术仅作为辅助，而非替代学生的思考过程或教师的教育职责</li>
                   <li>对儿童学生而言，需要在正确的德育与价值观指引下，理解AI辅助工具的优点与局限</li>
                 </ul>
@@ -726,10 +729,10 @@ export default function AIGuidelines() {
                     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                       <div className="p-4 rounded-lg bg-gradient-to-br from-blue-50 to-transparent border border-blue-100/50">
                         <h5 className="text-lg md:text-xl font-semibold text-blue-700 mb-2">安全性</h5>
-                        <p className="text-base md:text-lg text-gray-600">必须遵守相关法律法规和服提供商的规定，确保适当地使用生成式AI服务。</p>
+                        <p className="text-base md:text-lg text-gray-600">必须遵守��关法律法规和服提供商的规定，确保适当地使用生成式AI服务。</p>
                       </div>
                       <div className="p-4 rounded-lg bg-gradient-to-br from-blue-50 to-transparent border border-blue-100/50">
-                        <h5 className="text-lg md:text-xl font-semibold text-blue-700 mb-2">信息安全</h5>
+                        <h5 className="text-lg md:text-xl font-semibold text-blue-700 mb-2">��息安全</h5>
                         <p className="text-base md:text-lg text-gray-600">保护学校信息安全至关重要。参考文部科学省的信息安全指南，制定符合学校实际情况的策略。</p>
                       </div>
                       <div className="p-4 rounded-lg bg-gradient-to-br from-blue-50 to-transparent border border-blue-100/50">
