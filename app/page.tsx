@@ -6,6 +6,8 @@ import { SectionHeader } from "../components/ui/section-header"
 import { CheckList } from "../components/ui/check-list"
 import { Card } from "../components/ui/card"
 import { Collapsible } from "../components/ui/collapsible"
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function AIGuidelines() {
   const teacherChecklist = [
@@ -41,11 +43,12 @@ export default function AIGuidelines() {
               {/* 品牌行 */}
               <div className="flex items-center gap-4">
                 <div className="flex-shrink-0">
-                  <img
-                    src="/logo.svg"
-                    alt="MathJourneyAI"
-                    className="h-8 w-auto object-contain"
-                    crossOrigin="anonymous"
+                  <Image
+                    src="/images/logo.png"
+                    alt="MathJourneyAI Logo"
+                    width={40}
+                    height={40}
+                    className="mr-2"
                   />
                 </div>
                 <h2 className="text-lg md:text-xl font-bold">
@@ -65,14 +68,14 @@ export default function AIGuidelines() {
                     </div>
                     <div className="flex flex-wrap items-center">
                       <span className="text-gray-500 md:ml-2">生成自:</span>
-                      <a 
+                      <Link 
                         href="https://www.mext.go.jp/a_menu/other/mext_02412.html"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ml-2 text-gray-900 hover:text-[#0060C8] transition-colors whitespace-nowrap"
                       >
                         日本文部科学省 "生成AIの利用について" 项目
-                      </a>
+                      </Link>
                     </div>
                     <div className="hidden md:block text-gray-300 mx-3">•</div>
                     <div className="flex items-center">
@@ -85,7 +88,7 @@ export default function AIGuidelines() {
                 {/* 资源卡片容器 */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                   {/* PDF 预览卡片 */}
-                  <a
+                  <Link
                     href="https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -95,10 +98,11 @@ export default function AIGuidelines() {
                       <div className="grid grid-cols-12 gap-0">
                         {/* 封面图片 */}
                         <div className="relative aspect-video lg:aspect-[1.414/1] bg-gradient-to-br from-[#1a2c4c] to-[#2a3c5c] overflow-hidden col-span-5">
-                          <img
+                          <Image
                             src="/pdf-cover.jpeg"
                             alt="PDF封面预览"
                             className="absolute inset-0 w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                            fill
                           />
                           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
                         </div>
@@ -140,10 +144,10 @@ export default function AIGuidelines() {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
 
                   {/* 项目链接卡片 */}
-                  <a
+                  <Link
                     href="https://www.mext.go.jp/a_menu/other/mext_02412.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -154,10 +158,11 @@ export default function AIGuidelines() {
                         {/* 预览区域 */}
                         <div className="relative aspect-video lg:aspect-[1.414/1] bg-gradient-to-br from-blue-50 to-blue-100 overflow-hidden col-span-5">
                           <div className="absolute inset-0 flex items-center justify-center">
-                            <img
+                            <Image
                               src="/top_a_menu_ta_imgs_logo_mext.jpg"
                               alt="文部科学省"
                               className="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                              fill
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-br from-blue-100/10 to-blue-200/10 mix-blend-multiply group-hover:from-blue-100/5 group-hover:to-blue-200/5 transition-colors duration-300" />
@@ -195,7 +200,7 @@ export default function AIGuidelines() {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -247,10 +252,11 @@ export default function AIGuidelines() {
           <SectionHeader number="2" title="关于学习场景中利用的先行实践案例" />
           <div className="p-6">
             <div className="bg-white rounded-lg overflow-hidden">
-              <img
+              <Image
                 src="/examples-used-educational-settings.png"
                 alt="学习场景中的生成式AI应用案例"
                 className="w-full h-auto object-contain"
+                fill
               />
             </div>
           </div>
@@ -359,7 +365,7 @@ export default function AIGuidelines() {
                     本资料中列举了教职员的校务、学生的学习活动以及教育委员会等整体管理层面，
                     各自需要注意的细则检查要点，可作为实际操作的指引。
                     <div className="mt-2">
-                      <a
+                      <Link
                         href="https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -369,7 +375,7 @@ export default function AIGuidelines() {
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
                           <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </li>
                   <li>
@@ -377,7 +383,7 @@ export default function AIGuidelines() {
                     通过先行试点校的经验，可以为其它学校提供可借鉴的流程与方法，
                     包括系统部署、课堂融入及安全管理等方面的实践成果。
                     <div className="mt-2 space-y-2">
-                      <a
+                      <Link
                         href="https://leadingdxschool.mext.go.jp/ai_school/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -387,8 +393,8 @@ export default function AIGuidelines() {
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
                           <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                         </svg>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="https://leadingdxschool.mext.go.jp/achieve/ai/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -398,7 +404,7 @@ export default function AIGuidelines() {
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
                           <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </li>
                   <li>
@@ -417,7 +423,7 @@ export default function AIGuidelines() {
                     <h4 className="font-medium mb-2 text-gray-700">文部科学省</h4>
                     <ul className="space-y-2">
                       <li>
-                        <a
+                        <Link
                           href="https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/1397369.htm"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -427,10 +433,10 @@ export default function AIGuidelines() {
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
                             <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                           </svg>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="https://www.mext.go.jp/a_menu/other/data_00007.htm"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -440,7 +446,7 @@ export default function AIGuidelines() {
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
                             <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                           </svg>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -448,7 +454,7 @@ export default function AIGuidelines() {
                     <h4 className="font-medium mb-2 text-gray-700">内阁府</h4>
                     <ul className="space-y-2">
                       <li>
-                        <a
+                        <Link
                           href="https://www8.cao.go.jp/cstp/ai/index.html"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -458,7 +464,7 @@ export default function AIGuidelines() {
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
                             <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                           </svg>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -473,7 +479,7 @@ export default function AIGuidelines() {
                     <h4 className="font-medium mb-2 text-gray-700">UNESCO & OECD</h4>
                     <ul className="space-y-2">
                       <li>
-                        <a
+                        <Link
                           href="https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -483,10 +489,10 @@ export default function AIGuidelines() {
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
                             <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                           </svg>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="https://www.oecd.org/en/publications/the-potential-impact-of-artificial-intelligence-on-equity-and-inclusion-in-education_15df715b-en.html"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -496,7 +502,7 @@ export default function AIGuidelines() {
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
                             <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                           </svg>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -504,7 +510,7 @@ export default function AIGuidelines() {
                     <h4 className="font-medium mb-2 text-gray-700">各国教育部门</h4>
                     <ul className="space-y-2">
                       <li>
-                        <a
+                        <Link
                           href="https://tech.ed.gov/ai-future-of-teaching-and-learning/"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -514,10 +520,10 @@ export default function AIGuidelines() {
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
                             <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                           </svg>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -527,7 +533,7 @@ export default function AIGuidelines() {
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
                             <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                           </svg>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -545,8 +551,8 @@ export default function AIGuidelines() {
             </span>
             <div className="w-px h-8 bg-[var(--text-white)]/20 group-hover:bg-[var(--text-white)]/30 transition-colors" />
             <div className="flex items-center gap-3">
-              <img
-                src="/logo.svg"
+              <Image
+                src="/images/logo.png"
                 alt="MathJourneyAI Logo"
                 className="w-8 h-8 object-contain"
               />
@@ -566,12 +572,13 @@ export default function AIGuidelines() {
               <p className="text-base md:text-lg leading-relaxed text-gray-600">
                 生成式AI技术的快速发展为教育领域带来了前所未有的机遇和挑战。日本文部科学省发布的
                 "初等中等教育阶段生成式AI的合理利用指南"（以下简称"指南"）
-                <a href="https://www.mext.go.jp/a_menu/other/mext_02412.html" 
+                <Link 
+                   href="https://www.mext.go.jp/a_menu/other/mext_02412.html" 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    className="no-underline">
                   <sup className="text-blue-600 hover:text-blue-700">1</sup>
-                </a>，
+                </Link>，
                 旨在指导学校在确保学生安全和尊重教育本质的前提下，有效利用生成式AI提升教学质量和学生的学习体验。
                 本报告将结合指南原文和分析结果，对指南进行深度解读，并探讨生成式AI如何帮助日本的老师和学生。
               </p>
@@ -587,19 +594,21 @@ export default function AIGuidelines() {
                       <h4 className="font-semibold text-lg text-gray-900">1. AI时代教育面临的挑战</h4>
                       <p className="mt-3 text-gray-600 leading-relaxed">
                         指南指出，生成式AI的普及对社会产生了深远影响，教育领域也不例外
-                        <a href="https://www.mext.go.jp/a_menu/other/mext_02412.html" 
+                        <Link 
+                           href="https://www.mext.go.jp/a_menu/other/mext_02412.html" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            className="no-underline">
                           <sup className="text-blue-600 hover:text-blue-700">1</sup>
-                        </a>。
+                        </Link>。
                         一方面，生成式AI可以辅助教学，提高效率；另一方面，也引发了对学习意义、伦理、安全等方面的担忧
-                        <a href="https://www.datacamp.com/blog/ai-in-education" 
+                        <Link 
+                           href="https://www.datacamp.com/blog/ai-in-education" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            className="no-underline">
                           <sup className="text-blue-600 hover:text-blue-700">2</sup>
-                        </a>。
+                        </Link>。
                       </p>
                     </div>
 
@@ -607,12 +616,13 @@ export default function AIGuidelines() {
                       <h4 className="font-semibold text-lg text-gray-900">2. 培养未来人才</h4>
                       <p className="mt-3 text-gray-600 leading-relaxed">
                         指南强调，在AI时代，培养能够熟练使用包括生成式AI在内的技术工具、并能充分发挥个人才能的下一代至关重要
-                        <a href="https://monsha.ai/blog/ethical-and-effective-use-of-generative-ai-in-education/" 
+                        <Link 
+                           href="https://monsha.ai/blog/ethical-and-effective-use-of-generative-ai-in-education/" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            className="no-underline">
                           <sup className="text-blue-600 hover:text-blue-700">3</sup>
-                        </a>。
+                        </Link>。
                         学校合理利用生成式AI是实现这一目标的重要手段。
                       </p>
                     </div>
@@ -621,12 +631,13 @@ export default function AIGuidelines() {
                       <h4 className="font-semibold text-lg text-gray-900">3. 政府的立场</h4>
                       <p className="mt-3 text-gray-600 leading-relaxed">
                         指南提到日本政府已发布"以人为中心的AI社会原则"等文件，强调尊重人权和社会多性的前提下发展和利用AI
-                        <a href="https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf" 
+                        <Link 
+                           href="https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            className="no-underline">
                           <sup className="text-blue-600 hover:text-blue-700">7</sup>
-                        </a>。
+                        </Link>。
                         文部科学省也基于专家意见发布了初步指南，并根据技术发展和实践经验不断完善。
                       </p>
                     </div>
@@ -642,12 +653,13 @@ export default function AIGuidelines() {
                       <h4 className="font-semibold text-lg text-gray-900">1. 定义</h4>
                       <p className="mt-3 text-gray-600 leading-relaxed">
                         指南将生成式AI定义为能够生成文章、图像、程序等内容的AI模型
-                        <a href="https://www.neurond.com/blog/generative-ai-in-education" 
+                        <Link 
+                           href="https://www.neurond.com/blog/generative-ai-in-education" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            className="no-underline">
                           <sup className="text-blue-600 hover:text-blue-700">4</sup>
-                        </a>。
+                        </Link>。
                       </p>
                     </div>
 
@@ -656,12 +668,13 @@ export default function AIGuidelines() {
                       <p className="mt-3 text-gray-600 leading-relaxed">
                         生成式AI可以像与人对话一样进行交流，进行信息收集、整理和分析。
                         在教育领域，它可以辅助文章草案撰写图像生成、语言学习、编程代码生成、头脑风暴等多种场景
-                        <a href="https://litslink.com/blog/generative-ai-in-education-the-impact-ethical-considerations-and-use-cases" 
+                        <Link 
+                           href="https://litslink.com/blog/generative-ai-in-education-the-impact-ethical-considerations-and-use-cases" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            className="no-underline">
                           <sup className="text-blue-600 hover:text-blue-700">5</sup>
-                        </a>。
+                        </Link>。
                       </p>
                     </div>
 
@@ -670,12 +683,13 @@ export default function AIGuidelines() {
                       <p className="mt-3 text-gray-600 leading-relaxed">
                         指南也指出了生成式AI的潜在风险，例如产生错误信息（幻觉）、偏见、缺乏透明度等。
                         针对这些风险，指南建议采用如检索增强生成等技术来抑制错误答案，并根据输入提示词来限制权限
-                        <a href="https://community.openai.com/t/the-benefits-of-using-generative-ai-in-higher-education/730491" 
+                        <Link 
+                           href="https://community.openai.com/t/the-benefits-of-using-generative-ai-in-higher-education/730491" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            className="no-underline">
                           <sup className="text-blue-600 hover:text-blue-700">6</sup>
-                        </a>。
+                        </Link>。
                       </p>
                     </div>
                   </div>
@@ -865,7 +879,7 @@ export default function AIGuidelines() {
                         ].map((ref) => (
                           <div key={ref.number} className="flex items-start gap-3 group">
                             <span className="text-gray-400 flex-shrink-0 mt-1">{ref.number}.</span>
-                            <a
+                            <Link
                               href={ref.url}
                               className="text-blue-600 hover:text-blue-700 transition-colors hover-underline"
                               target="_blank"
@@ -876,7 +890,7 @@ export default function AIGuidelines() {
                                    className="w-4 h-4 inline-block ml-1 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                               </svg>
-                            </a>
+                            </Link>
                           </div>
                         ))}
                       </div>
@@ -894,8 +908,8 @@ export default function AIGuidelines() {
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="flex flex-col items-center justify-center gap-4">
             <div className="flex items-center gap-3">
-              <img
-                src="/logo.svg"
+              <Image
+                src="/images/logo.png"
                 alt="MathJourneyAI Logo"
                 className="h-8 w-auto"
               />
