@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="logosIntellijIdea0" x1="37.036%" x2="178.13%" y1="51.017%" y2="41.861%">
+      <stop offset="9%" stop-color="#FC801D"/>
+      <stop offset="23%" stop-color="#B07F61"/>
+      <stop offset="41%" stop-color="#577DB3"/>
+      <stop offset="53%" stop-color="#1E7CE6"/>
+      <stop offset="59%" stop-color="#087CFA"/>
+    </linearGradient>
+    <linearGradient id="logosIntellijIdea1" x1="73.557%" x2="35.575%" y1="114.76%" y2="1.075%">
+      <stop offset="0%" stop-color="#FE2857"/>
+      <stop offset="8%" stop-color="#CB3979"/>
+      <stop offset="16%" stop-color="#9E4997"/>
+      <stop offset="25%" stop-color="#7557B2"/>
+      <stop offset="34%" stop-color="#5362C8"/>
+      <stop offset="44%" stop-color="#386CDA"/>
+      <stop offset="54%" stop-color="#2373E8"/>
+      <stop offset="66%" stop-color="#1478F2"/>
+      <stop offset="79%" stop-color="#0B7BF8"/>
+      <stop offset="100%" stop-color="#087CFA"/>
+    </linearGradient>
+    <linearGradient id="logosIntellijIdea2" x1="28.551%" x2="81.801%" y1="23.614%" y2="129.755%">
+      <stop offset="0%" stop-color="#FE2857"/>
+      <stop offset="8%" stop-color="#FE295F"/>
+      <stop offset="21%" stop-color="#FF2D76"/>
+      <stop offset="30%" stop-color="#FF318C"/>
+      <stop offset="38%" stop-color="#EA3896"/>
+      <stop offset="55%" stop-color="#B248AE"/>
+      <stop offset="79%" stop-color="#5A63D6"/>
+      <stop offset="100%" stop-color="#087CFA"/>
+    </linearGradient>
+  </defs>
+  <g transform="scale(-1, 1) translate(-256, 0) translate(10, 0)">
+    <path fill="url(#logosIntellijIdea0)" d="M40.533 180.56L2.88 150.827l22.16-41.04l33.307 11.146z"/>
+    <path fill="#087CFA" d="M246 68.24l-4.613 148.267L152.773 256l-53.706-34.667z"/>
+    <path fill="url(#logosIntellijIdea1)" d="m246 68.24l-48.8 47.6l-62.667-76.88l30.934-34.773z"/>
+    <path fill="url(#logosIntellijIdea2)" d="M99.067 221.333L20.64 249.68l16.427-57.52l21.28-71.227L0 101.413L37.067 0l83.786 9.893L207.2 115.84z"/>
+  </g>
+  <rect x="49.147" y="48" width="160" height="160" fill="#000"/>
+  <text x="25%" y="40%" text-anchor="start" fill="#FFFFFF" font-family="Helvetica Neue, Arial, sans-serif" font-weight="bold" font-size="80" dy="0.35em">MJ</text>
+  <text x="25%" y="65%" text-anchor="start" fill="#E0E0E0" font-family="Chalkduster, Comic Sans MS, Chalkboard, cursive" font-weight="normal" font-size="30" dy="0.35em" style="text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6), -1px -1px 3px rgba(0, 0, 0, 0.4), 2px 1px 4px rgba(0, 0, 0, 0.7);">f(x)</text>
+  
+</svg>

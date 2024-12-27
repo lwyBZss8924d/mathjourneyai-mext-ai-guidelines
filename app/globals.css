@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand Colors - Gradients */
+    --brand-orange-start: #FC801D;
+    --brand-orange-mid: #D67F3D;
+    --brand-orange-end: #B07F61;
+    
+    --brand-blue-start: #577DB3;
+    --brand-blue-mid: #1E7CE6;
+    --brand-blue-end: #087CFA;
+    
+    --brand-accent-start: #FE2857;
+    --brand-accent-mid: #EA3896;
+    --brand-accent-end: #5A63D6;
+
+    /* Text Colors */
+    --text-primary: #1A1A1A;
+    --text-secondary: #666666;
+    --text-tertiary: #999999;
+    --text-white: #FFFFFF;
+    --text-on-dark: #E0E0E0;
+
+    /* Background Colors */
+    --background-light: #F8FAFD;
+    --background-white: #FFFFFF;
+    --background-dark: #000000;
+
+    /* State Colors */
+    --state-hover-blue: #0666D0;
+    --state-hover-orange: #B07F61;
+    --state-hover-accent: #EA3896;
+    
+    --state-active-blue: #045CB8;
+    --state-active-orange: #955C3D;
+    --state-active-accent: #CB2A7E;
+  }
+
+  /* Base Styles */
+  html {
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-[var(--background-light)] text-[var(--text-primary)];
+  }
+}
+
+@layer components {
+  /* Typography */
+  .h1 {
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+  }
+
+  .h2 {
+    @apply text-2xl md:text-3xl font-bold tracking-tight;
+  }
+
+  .h3 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  .h4 {
+    @apply text-lg md:text-xl font-semibold;
+  }
+
+  .body-lg {
+    @apply text-lg leading-relaxed;
+  }
+
+  .body {
+    @apply text-base leading-relaxed;
+  }
+
+  .body-sm {
+    @apply text-sm leading-relaxed;
+  }
+
+  /* Gradients */
+  .gradient-blue {
+    @apply bg-gradient-to-r from-[var(--brand-blue-start)] via-[var(--brand-blue-mid)] to-[var(--brand-blue-end)];
+  }
+
+  .gradient-orange {
+    @apply bg-gradient-to-r from-[var(--brand-orange-start)] via-[var(--brand-orange-mid)] to-[var(--brand-orange-end)];
+  }
+
+  .gradient-accent {
+    @apply bg-gradient-to-r from-[var(--brand-accent-start)] via-[var(--brand-accent-mid)] to-[var(--brand-accent-end)];
+  }
+
+  /* Components */
+  .card {
+    @apply bg-[var(--background-white)] rounded-xl shadow-sm hover:shadow-md transition-all duration-200;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn gradient-blue text-[var(--text-white)] hover:brightness-110 active:brightness-90;
+  }
+
+  .btn-secondary {
+    @apply btn gradient-orange text-[var(--text-white)] hover:brightness-110 active:brightness-90;
+  }
+
+  .btn-accent {
+    @apply btn gradient-accent text-[var(--text-white)] hover:brightness-110 active:brightness-90;
+  }
+
+  /* Interactive Elements */
+  .interactive-hover {
+    @apply transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md;
+  }
+
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-[var(--brand-blue-mid)] focus:ring-offset-2;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+} 
