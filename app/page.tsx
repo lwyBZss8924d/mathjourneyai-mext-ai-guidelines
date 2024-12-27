@@ -555,7 +555,7 @@ export default function AIGuidelines() {
             <div className="w-px h-8 bg-[var(--text-white)]/20 group-hover:bg-[var(--text-white)]/30 transition-colors" />
             <div className="flex items-center gap-3">
               <Image
-                src="/images/mext-logo.png"
+                src="/images/mathJourneyLogo.png"
                 alt="MathJourneyAI Logo"
                 className="h-8 w-auto"
               />
@@ -912,7 +912,7 @@ export default function AIGuidelines() {
           <div className="flex flex-col items-center justify-center gap-4">
             <div className="flex items-center gap-3">
               <Image
-                src="/images/mext-logo.png"
+                src="/images/mathJourneyLogo.png"
                 alt="MathJourneyAI Logo"
                 className="h-8 w-auto"
               />
