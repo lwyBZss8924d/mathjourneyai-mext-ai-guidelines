@@ -2,16 +2,20 @@
 
 const nextConfig = {
   reactStrictMode: true,
+  swcMinify: true,
+  images: {
+    domains: ['localhost'],
+    unoptimized: true
+  },
   experimental: {
     turbo: {
       rules: {
         "*.mdx": ["mdx-loader"]
       }
     },
-    optimizeCss: true
-  },
-  images: {
-    domains: ['localhost']
+    optimizeCss: true,
+    legacyBrowsers: false,
+    browsersListForSwc: true
   }
 }
 
