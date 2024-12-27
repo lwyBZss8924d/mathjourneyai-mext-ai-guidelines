@@ -44,7 +44,7 @@ export default function AIGuidelines() {
               <div className="flex items-center gap-4">
                 <div className="flex-shrink-0">
                   <Image
-                    src="/images/logo.png"
+                    src="/images/logo_mext.jpg"
                     alt="MathJourneyAI Logo"
                     width={40}
                     height={40}
@@ -99,7 +99,7 @@ export default function AIGuidelines() {
                         {/* 封面图片 */}
                         <div className="relative aspect-video lg:aspect-[1.414/1] bg-gradient-to-br from-[#1a2c4c] to-[#2a3c5c] overflow-hidden col-span-5">
                           <Image
-                            src="/pdf-cover.jpeg"
+                            src="/images/pdf-cover.jpeg"
                             alt="PDF封面预览"
                             className="absolute inset-0 w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                             fill
@@ -159,7 +159,7 @@ export default function AIGuidelines() {
                         <div className="relative aspect-video lg:aspect-[1.414/1] bg-gradient-to-br from-blue-50 to-blue-100 overflow-hidden col-span-5">
                           <div className="absolute inset-0 flex items-center justify-center">
                             <Image
-                              src="/top_a_menu_ta_imgs_logo_mext.jpg"
+                              src="/images/logo_mext.jpg"
                               alt="文部科学省"
                               className="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                               fill
@@ -253,7 +253,7 @@ export default function AIGuidelines() {
           <div className="p-6">
             <div className="bg-white rounded-lg overflow-hidden">
               <Image
-                src="/examples-used-educational-settings.png"
+                src="/images/examples-used-educational-settings.png"
                 alt="学习场景中的生成式AI应用案例"
                 className="w-full h-auto object-contain"
                 fill
@@ -552,9 +552,9 @@ export default function AIGuidelines() {
             <div className="w-px h-8 bg-[var(--text-white)]/20 group-hover:bg-[var(--text-white)]/30 transition-colors" />
             <div className="flex items-center gap-3">
               <Image
-                src="/images/logo.png"
+                src="/images/logo_mext.jpg"
                 alt="MathJourneyAI Logo"
-                className="w-8 h-8 object-contain"
+                className="h-8 w-auto"
               />
               <h2 className="text-xl lg:text-2xl font-medium tracking-tight">
                 Deep Research Report
@@ -766,7 +766,7 @@ export default function AIGuidelines() {
                         <div className="space-y-3">
                           <div>
                             <span className="font-medium text-blue-700">基本理念：</span>
-                            <p className="mt-1 text-gray-600">在理解AI机制和特点的前提下，积极利用AI来提高工作效率和质量。</p>
+                            <p className="mt-1 text-gray-600">在理解AI机制和特点的前提下，积极��用AI来提高工作效率和质量。</p>
                           </div>
                           <div>
                             <span className="font-medium text-blue-700">具体应用：</span>
@@ -909,7 +909,7 @@ export default function AIGuidelines() {
           <div className="flex flex-col items-center justify-center gap-4">
             <div className="flex items-center gap-3">
               <Image
-                src="/images/logo.png"
+                src="/images/logo_mext.jpg"
                 alt="MathJourneyAI Logo"
                 className="h-8 w-auto"
               />
