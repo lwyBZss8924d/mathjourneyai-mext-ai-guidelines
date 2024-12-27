@@ -242,7 +242,7 @@ export default function AIGuidelines() {
               <div>
                 <h3 className="text-lg md:text-xl font-bold text-[#1a4ca1] mb-2">学校现场可用的培训教材等</h3>
                 <p className="text-base md:text-lg leading-relaxed">
-                  文部科学省所实施的培训（含存档）以及各教育委员会自主开发的相关学习内容等示例均已在此汇总，可作为学校教学与培训的辅助材��。
+                  文部科学省所实施的培训（含存档）以及各教育委员会自主开发的相关学习内容等示例均已在此汇总，可作为学校教学与培训的辅助材料。
                 </p>
               </div>
             </div>
@@ -273,8 +273,8 @@ export default function AIGuidelines() {
               <div className="space-y-4">
                 <h3 className="text-lg md:text-xl font-bold">学校地点的人本利用</h3>
                 <ul className="list-disc pl-4 space-y-2 text-base md:text-lg">
-                  <li>生成式AI的使用应基于"以人为本"的原则，通过适当运用��辅助教职员减轻繁琐工作、激发学生的探究思维</li>
-                  <li>需要权衡��生的学习目标与生成式AI的能边界，保证技术仅作为辅助，而非替代学生的思考过程或教师的教育职责</li>
+                  <li>生成式AI的使用应基于"以人为本"的原则，通过适当运用辅助教职员减轻繁琐工作、激发学生的探究思维</li>
+                  <li>需要权衡学生的学习目标与生成式AI的能边界，保证技术仅作为辅助，而非替代学生的思考过程或教师的教育职责</li>
                   <li>对儿童学生而言，需要在正确的德育与价值观指引下，理解AI辅助工具的优点与局限</li>
                 </ul>
               </div>
@@ -684,7 +684,7 @@ export default function AIGuidelines() {
                     <div className="relative pl-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-blue-500 before:to-blue-600 before:rounded-full">
                       <h4 className="font-semibold text-lg text-gray-900">3. 风险和对策</h4>
                       <p className="mt-3 text-gray-600 leading-relaxed">
-                        指南也指出了生成式AI的潜在风险，例如产生错误信息（幻觉）、偏见、缺乏透明��等。
+                        指南也指出了生成式AI的潜在风险，例如产生错误信息（幻觉）、偏见、缺乏透明度等。
                         针对这些风险，指南建议采用如检索增强生成等技术来抑制错误答案，并根据输入提示词来限制权限
                         <Link 
                            href="https://community.openai.com/t/the-benefits-of-using-generative-ai-in-higher-education/730491" 
@@ -706,7 +706,7 @@ export default function AIGuidelines() {
                     <div className="relative pl-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-blue-500 before:to-blue-600 before:rounded-full">
                       <h4 className="font-semibold text-lg text-gray-900">1. "以人为中心"原则</h4>
                       <p className="mt-3 text-gray-600 leading-relaxed">
-                        指南强调，AI的利用应以不侵犯人权为前提，旨在扩展人类能力，促进社��发展。
+                        指南强调，AI的利用应以不侵犯人权为前提，旨在扩展人类能力，促进社会发展。
                         在学校层面，这意味着不应将AI与人对立，而是将其视为辅助人类、拓展可能性、提升效率的工具。
                       </p>
                     </div>
@@ -729,10 +729,10 @@ export default function AIGuidelines() {
                     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                       <div className="p-4 rounded-lg bg-gradient-to-br from-blue-50 to-transparent border border-blue-100/50">
                         <h5 className="text-lg md:text-xl font-semibold text-blue-700 mb-2">安全性</h5>
-                        <p className="text-base md:text-lg text-gray-600">必须遵守��关法律法规和服提供商的规定，确保适当地使用生成式AI服务。</p>
+                        <p className="text-base md:text-lg text-gray-600">必须遵守相关法律法规和提供商的规定，确保适当地使用生成式AI服务。</p>
                       </div>
                       <div className="p-4 rounded-lg bg-gradient-to-br from-blue-50 to-transparent border border-blue-100/50">
-                        <h5 className="text-lg md:text-xl font-semibold text-blue-700 mb-2">��息安全</h5>
+                        <h5 className="text-lg md:text-xl font-semibold text-blue-700 mb-2">信息安全</h5>
                         <p className="text-base md:text-lg text-gray-600">保护学校信息安全至关重要。参考文部科学省的信息安全指南，制定符合学校实际情况的策略。</p>
                       </div>
                       <div className="p-4 rounded-lg bg-gradient-to-br from-blue-50 to-transparent border border-blue-100/50">
@@ -769,7 +769,7 @@ export default function AIGuidelines() {
                         <div className="space-y-3">
                           <div>
                             <span className="font-medium text-blue-700">基本理念：</span>
-                            <p className="mt-1 text-gray-600">在理解AI机制和特点的前提下，积极��用AI来提高工作效率和质量。</p>
+                            <p className="mt-1 text-gray-600">在理解AI机制和特点的前提下，积极使用AI来提高工作效率和质量。</p>
                           </div>
                           <div>
                             <span className="font-medium text-blue-700">具体应用：</span>
