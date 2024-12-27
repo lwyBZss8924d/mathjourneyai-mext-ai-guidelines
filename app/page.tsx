@@ -44,7 +44,7 @@ export default function AIGuidelines() {
               <div className="flex items-center gap-4">
                 <div className="flex-shrink-0">
                   <Image
-                    src="/images/logo_mext.jpg"
+                    src="/images/mext-logo.png"
                     alt="MathJourneyAI Logo"
                     width={40}
                     height={40}
@@ -159,7 +159,7 @@ export default function AIGuidelines() {
                         <div className="relative aspect-video lg:aspect-[1.414/1] bg-gradient-to-br from-blue-50 to-blue-100 overflow-hidden col-span-5">
                           <div className="absolute inset-0 flex items-center justify-center">
                             <Image
-                              src="/images/logo_mext.jpg"
+                              src="/images/mext-logo.png"
                               alt="文部科学省"
                               className="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                               fill
@@ -552,7 +552,7 @@ export default function AIGuidelines() {
             <div className="w-px h-8 bg-[var(--text-white)]/20 group-hover:bg-[var(--text-white)]/30 transition-colors" />
             <div className="flex items-center gap-3">
               <Image
-                src="/images/logo_mext.jpg"
+                src="/images/mext-logo.png"
                 alt="MathJourneyAI Logo"
                 className="h-8 w-auto"
               />
@@ -909,7 +909,7 @@ export default function AIGuidelines() {
           <div className="flex flex-col items-center justify-center gap-4">
             <div className="flex items-center gap-3">
               <Image
-                src="/images/logo_mext.jpg"
+                src="/images/mext-logo.png"
                 alt="MathJourneyAI Logo"
                 className="h-8 w-auto"
               />
