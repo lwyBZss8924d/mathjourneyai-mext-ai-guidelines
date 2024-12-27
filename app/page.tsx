@@ -684,7 +684,7 @@ export default function AIGuidelines() {
                     <div className="relative pl-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-blue-500 before:to-blue-600 before:rounded-full">
                       <h4 className="font-semibold text-lg text-gray-900">3. 风险和对策</h4>
                       <p className="mt-3 text-gray-600 leading-relaxed">
-                        指南也指出了生成式AI的潜在风险，例如产生错误信息（幻觉）、偏见、缺乏透明度等。
+                        指南也指出了生成式AI的潜在风险，例如产生错误信息（幻觉）、偏见、缺乏透明��等。
                         针对这些风险，指南建议采用如检索增强生成等技术来抑制错误答案，并根据输入提示词来限制权限
                         <Link 
                            href="https://community.openai.com/t/the-benefits-of-using-generative-ai-in-higher-education/730491" 
@@ -706,7 +706,7 @@ export default function AIGuidelines() {
                     <div className="relative pl-6 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-blue-500 before:to-blue-600 before:rounded-full">
                       <h4 className="font-semibold text-lg text-gray-900">1. "以人为中心"原则</h4>
                       <p className="mt-3 text-gray-600 leading-relaxed">
-                        指南强调，AI的利用应以不侵犯人权为前提，旨在扩展人类能力，促进社会发展。
+                        指南强调，AI的利用应以不侵犯人权为前提，旨在扩展人类能力，促进社��发展。
                         在学校层面，这意味着不应将AI与人对立，而是将其视为辅助人类、拓展可能性、提升效率的工具。
                       </p>
                     </div>
