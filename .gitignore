@@ -16,6 +16,8 @@
 # misc
 .DS_Store
 *.pem
+.idea
+.vscode
 
 # debug
 npm-debug.log*
@@ -30,5 +32,17 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts 
-node_modules
+next-env.d.ts
+
+# resources
+/public/logo.svg
+/public/logo_mext.jpg
+/public/mext-logo-2x.png
+/public/mext-logo.png
+/public/pdf-cover.jpeg
+/public/pdf-cover.jpg
+/public/top_a_menu_ta_imgs_logo_mext.jpg
+/public/examples-used-educational-settings.png
+
+# original content
+/original-content
